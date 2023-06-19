@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         /* questão 1: imc
         * fórmula == "peso / (altura**2)
         *<18.5|18.5 25 | 25 30 | 30 35 | 35 40 | > 40
@@ -12,9 +12,9 @@ public class App {
         Scanner sc = new Scanner(System.in);
         String hun=null; 
         Construct calc = new Construct(0,0);
-        while (hun != "0"){
+        
             
-        System.out.println("Escolha o que você quer\n 1 para imc \n 2 para etapas de natação\n 3 para pagar uma média de lucro\n digite 0 para encerrar: ");
+        System.out.println("Escolha o que você quer\n 1 para imc \n 2 para etapas de natação\n 3 para pagar uma média de lucro\n 4 para tomar remedio\n digite 0 para encerrar: ");
         hun = sc.nextLine(); 
         
 
@@ -37,11 +37,18 @@ public class App {
                 calc.setVal1(sc.nextFloat());
                 calc.Lucro();
                 break;
+            case "4":
+                System.out.println("digite o peso ");
+                calc.setVal1(sc.nextFloat());
+                System.out.println("digite a idade ");
+                calc.setVal2(sc.nextFloat());
+                calc.Remedio();
             default:
+            System.out.println("\nacabemo");
              break;
                 
         }
-        }    
+          
                         
                         
        

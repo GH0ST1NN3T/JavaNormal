@@ -3,11 +3,12 @@ public class Construct {
         private float val2=0;
         //construtor abaixo
     
-        public Construct(float pesoO, float altura) {
-            this.val1 = pesoO;
-            this.val2 = altura;
+        public Construct(float val1, float val2) {
+            this.val1 = val1;
+            this.val2 = val2;
         }
         public void retorno(){
+            System.out.println((this.val1/(this.val2*this.val2))*10000);
             if (this.val1/((this.val2*this.val2)/10000) <18.5){
                 System.out.println("abaixo do peso, seu palito de dente, seu cosplay de gaspar");
             }else if (this.val1/((this.val2*this.val2)/10000) >=18.5 && (this.val1/((this.val2*this.val2)/10000)) < 25){
@@ -32,7 +33,7 @@ public class Construct {
             }else if (this.val1 >=11 && this.val1<14){
                 System.out.println("juvenil A usuário de fortnite");
             }else if (this.val1 >=14 && this.val1<18){
-                System.out.println("juvenil Baborrescente");
+                System.out.println("juvenil B aborrescente");
             }else if (this.val1 >=18){
                 System.out.println("Sênior ou sensei, sla, some daqui também");
             }
@@ -53,7 +54,36 @@ public class Construct {
                 System.out.println("Lucro esperado de 30%\n valor de venda deve ser no mínimo de "+this.val2);
             }
             }
-        
+        public void Remedio(){
+            float idade = this.val1;
+            float peso = this.val2;
+            if (idade>=12){
+                if (peso>=60){
+                    System.out.printf("peso "+peso+" \n idade "+idade+" \n deve tomar 1000 mg de remedio");
+                
+                }else{
+                    System.out.printf("peso "+peso+" \n idade "+idade+" \n deve tomar 875 mg de remedio");
+                }
+            }else{
+                /*5 kg a 9 kg 125 mg
+                9.1 kg a 16 kg 250 mg
+                16.1 kg a 24 kg 375 mg
+                24.1 kg a 30 kg 500 mg
+                Acima de 30 kg 750 mg
+                */
+                if(peso>30){
+                    System.out.println("apenas 750mg");
+                }else if(peso >24 && peso <=30){
+                    System.out.println("apenas 500mg");
+                }else if(peso >16 && peso <=24){
+                    System.out.println("apenas 375mg");
+                }else if(peso >9 && peso <=30){
+                    System.out.println("apenas 250mg");
+                }else if(peso >5 && peso <=9){
+                    System.out.println("apenas 125mg");
+                }
+            }
+        }
         public float getVal1() {
             return val1;
         }

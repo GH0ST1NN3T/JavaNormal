@@ -3,7 +3,7 @@ import java.sql.*;
 public class FabricaConexao {
 	private static final String URL_BD = "jdbc:mysql://localhost:3306/safra";
 	private static final String USER_BD = "root";
-	private static final String PWD_BD = "Ren@t0gamer128";
+	private static final String PWD_BD = "";
 	public static Connection getConnection() {
 		Connection conexao = null;
 		try {

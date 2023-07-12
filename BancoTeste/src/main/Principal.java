@@ -19,7 +19,7 @@ public class Principal {
         AlunoDao alunoDao = new AlunoDao();
         List<Aluno> alunos = new LinkedList<Aluno>();
         //exclusao por ID 
-//        clienteDao.excluir(1);
+       clienteDao.excluir(1);
         //Visao de cada tabela
 //        for(Cliente c : clientes){
 //            System.out.println("" + c.getNome());
